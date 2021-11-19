@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
-	console.log(video.currentTime)
+	document.querySelector("#volume").textContent = video.volume*100 +"%";
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
